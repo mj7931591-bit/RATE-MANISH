@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Rate Manish 😎</title>
+</head>
+
+<body style="text-align:center; font-family:Arial;">
+
+<h2>Rate Manish 😎</h2>
+
+<button onclick="rate(1)">😐 Average</button>
+<button onclick="rate(2)">😊 Good</button>
+<button onclick="rate(3)">🔥 Awesome</button>
+
+<h3 id="result"></h3>
+
+<script>
+function rate(val){
+  let text = "";
+  if(val==1) text="Thik thak hai 😐";
+  if(val==2) text="Achha hai 😊";
+  if(val==3) text="Full hero 🔥";
+
+  document.getElementById("result").innerText = text;
+}
+</script>
+
+</body>
+</html>
